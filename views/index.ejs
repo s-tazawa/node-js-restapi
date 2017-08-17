@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/public/components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/public/stylesheets/index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="container">
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <form method="POST" action="/csv" enctype="multipart/form-data">
+            <label>CSVファイル名：</label>
+            <input type="file" name="csvFile">
+            <input type="submit" value="upload">
+        </form>
+
+        <p><img id="img" src="/public/images/neko.jpg" class="img-thumbnail"></p>
+      </div>
+    </div>
+ 
+    <script type="text/javascript" src="/public/components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/public/components/bootstrap/dist/js/bootstrap.js"></script>
+ <script type="text/javascript" src="/public/javascripts/index.js"></script>
+  </body>
+</html>
