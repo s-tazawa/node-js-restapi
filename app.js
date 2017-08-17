@@ -9,9 +9,6 @@ var bodyParser = require('body-parser');
 var app = express();
 app.engine('ejs', ejs.renderFile);
 
-// port
-var port = normalizePort(process.env.PORT || '3000');
-app.set('port', port);
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
