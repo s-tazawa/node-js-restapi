@@ -24,7 +24,7 @@
     "pg-prepared": "^2.5.13",
     "pg-transaction": "^1.0.4",
     "serve-favicon": "^2.4.3",
-    "server": "^1.0.0-beta.1"
+    "server": "^1.0.37"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
